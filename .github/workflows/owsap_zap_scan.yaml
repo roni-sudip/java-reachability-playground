@@ -1,4 +1,4 @@
-name: owasp testing 
+name: owasp test
 
 on: [push]
 
