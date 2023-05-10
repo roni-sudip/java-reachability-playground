@@ -1,25 +1,16 @@
 name: Example workflow for Maven using Snyk
 on: push
 jobs:
-  security:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - name: Run Snyk to check for vulnerabilities in repositories
-        uses: snyk/actions/maven@master
-        continue-on-error: true
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
   zap_scan:
     runs-on: ubuntu-latest
-    name: Scan the webapplication
+    name: Run DAST scan on the web application
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           ref: master
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.7.0
+        uses: zaproxy/action-baseline@v0.6.1
         with:
           docker_name: 'owasp/zap2docker-stable'
           target: 'http://testphp.vulnweb.com/'
