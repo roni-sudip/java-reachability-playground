@@ -1,5 +1,7 @@
 import org.nd4j.util.ArchiveUtils;
 import java.io.File;
+import org.eclipse.egit.github.core.client.GitHubClient;
+import org.eclipse.egit.github.core.service.GitHubService;
 
 public class Unzipper {
     public static void main(String[] args) throws Exception {
