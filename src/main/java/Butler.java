@@ -1,5 +1,7 @@
 import org.apache.commons.collections.ListUtils;
 import java.util.ArrayList;
+import org.eclipse.egit.github.core.client.GitHubClient;
+import org.eclipse.egit.github.core.service.GitHubService;
 
 public class Butler {
 
