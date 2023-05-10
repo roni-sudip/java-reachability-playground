@@ -22,6 +22,11 @@
             <artifactId>nd4j-common</artifactId>
             <version>1.0.0-beta2</version>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.mylyn.github</groupId>
+            <artifactId>org.eclipse.egit.github.core</artifactId>
+            <version>3.1.5</version>
+        </dependency>
     </dependencies>
 
 
